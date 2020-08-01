@@ -26,8 +26,8 @@ spec:
               name: postgres-storage
               subPath: postgres
           env:
-            - name: MULTIK8SPGPASSWORD
+            - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: multik8spgpassword
-                  key: MULTIK8SPGPASSWORD
+                  name: pgpassword
+                  key: PGPASSWORD
